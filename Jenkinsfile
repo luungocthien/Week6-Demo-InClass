@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
+        stage('Check') {
             steps {
                 git 'https://github.com/luungocthien/Week6-Demo-InClass.git'
             }
