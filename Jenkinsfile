@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Check') {
+        stage('checking') {
             steps {
-                git 'https://github.com/luungocthien/Week6-Demo-InClass.git'
+                git branch: 'main', url: 'https://github.com/luungocthien/Week6-Demo-InClass.git'
             }
         }
-        stage('Build') {
+        stage('build') {
             steps {
                 bat 'mvn clean install'
             }
